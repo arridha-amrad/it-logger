@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, Fragment } from "react";
+import "materialize-css/dist/css/materialize.min.css";
+import M from "materialize-css/dist/js/materialize.min.js";
+import "./App.css";
+import SearchBar from "./components/layouts/Searchbar";
+import Logs from "./components/logs/Logs";
+import AddBtn from "./components/layouts/AddBtn";
+import AddLogModal from './components/logs/AddLogModal';
+import EditLogModal from './components/logs/EditLogModal';
+import AddTechModal from './components/techs/AddTechModal';
+import TechListModal from "./components/techs/TechListModal";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    // init materialize JS
+    // to use materialize modal
+    M.AutoInit();
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <SearchBar />
+      <div className="container">
+        <AddBtn />
+        <AddLogModal/>
+        <EditLogModal/>
+        <AddTechModal/>
+        <TechListModal/>
+        <Logs />
+      </div>
+    </Fragment>
   );
-}
+};
 
 export default App;
