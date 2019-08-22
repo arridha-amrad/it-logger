@@ -2,32 +2,34 @@
   "logs": [
     {
       "id": 1,
-      "message": "Change hard drive on work station 005",
+      "message": "kasdlkhihoihsdibsdfsdfsdfsdfsfsdfsdfsdfsdfsdfsfs",
+      "tech": "amrad arridha",
       "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sam Smith"
+      "date": "2019-08-22T17:18:09.831Z"
     },
     {
       "id": 2,
-      "message": "Workstation 007 not posting",
-      "attention": true,
-      "date": "03-02-2019",
-      "tech": "John Doe"
+      "message": "jsdhkjsdhfsdkfsfsd",
+      "tech": "Sam Smith",
+      "attention": false,
+      "date": "2019-08-22T15:27:29.961Z"
     },
     {
       "id": 3,
-      "message": "Change memory on workstation 050",
-      "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sara Wilson"
+      "message": "what the fuck",
+      "tech": "John Doe",
+      "attention": true,
+      "date": "2019-08-22T15:30:16.190Z"
+    },
+    {
+      "message": "singing",
+      "attention": true,
+      "tech": "amrad arridha",
+      "date": "2019-08-22T17:14:13.873Z",
+      "id": 4
     }
   ],
   "techs": [
-    {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe"
-    },
     {
       "id": 2,
       "firstName": "Sam",
@@ -37,6 +39,11 @@
       "id": 3,
       "firstName": "Sara",
       "lastName": "Wilson"
+    },
+    {
+      "firstName": "amrad",
+      "lastName": "arridha",
+      "id": 4
     }
   ]
 }
